@@ -11,6 +11,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
+        print('called __str__ for Question')
         return self.question_text
 
     def was_published_recently(self):
